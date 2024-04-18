@@ -1,6 +1,6 @@
 [[_TOC_]]
 
-# How to authenticate against Dynamics WebAPI
+# Authentication
 
 ## Default HTTP authorization
 ### Request
@@ -10,7 +10,7 @@ Host: login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
 client_id={AZURE_CLIENT_ID}
-&scope=https://{DYNAMICS_ORGANIZATION}.api.crm4.dynamics.com/.default
+&scope=https://{DYNAMICS_ORG}.api.crm4.dynamics.com/.default
 &client_secret={AZURE_CLIENT_SECRET}
 &grant_type=client_credentials
 ```
@@ -27,8 +27,3 @@ Content-Type: application/json; charset=utf-8
   "access_token": "ACCESS_TOKEN"
 }
 ```
-
-
-## Custom Connector
-
-You first need to create a new ![Custom Connector](../../power-plattform/connectors/Create%20a%20custom%20connector.md)
