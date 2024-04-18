@@ -193,6 +193,7 @@ For the **Depth** parameter you need to use one of the following **Names**.
 
 Now you just need to fill out the parameters finally add the privileges to a role.
 
+#### Request
 ```http
 POST https://{DYNAMICS_ORG}.crm4.dynamics.com//api/data/v9.0/roles({role_id})/Microsoft.Dynamics.CRM.AddPrivilegesRole HTTP/1.1
 Content-Type: application/json
@@ -208,4 +209,9 @@ Authorization: Bearer {ACCESS_TOKEN}
     }
   ]
 }
+```
+
+#### Response
+```json
+HTTP/1.1 204 No Content
 ```
