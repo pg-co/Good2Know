@@ -15,5 +15,5 @@ sudo openssl req -new -x509 -nodes -days <NUMBER_OF_DAYS> -key private.pem -out 
 ### Generate PFX (PKCS#12)
 
 ```bash
-sudo openssl -export -in cert.pem -inkey private.pem -out cert.pfx
+sudo openssl pkcs12 -export -in cert.pem -inkey private.pem -out cert.pfx
 ```
